@@ -1,0 +1,10 @@
+---
+title: "gapminder"
+author: "Sara Campana"
+date: "6/22/2021"
+output: html_document
+---
+```{r}
+gapminder <- readr::read_csv('https://raw.githubusercontent.com/carpentries-incubator/open-science-with-r/gh-pages/data/gapminder.csv')
+```
+
