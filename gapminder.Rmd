@@ -8,3 +8,12 @@ output: html_document
 gapminder <- readr::read_csv('https://raw.githubusercontent.com/carpentries-incubator/open-science-with-r/gh-pages/data/gapminder.csv')
 ```
 
+```{r}
+library(tidyverse)
+
+gap_italy <- gapminder %>% filter (country == "Italy")
+
+ggplot (gap_italy, aes(year, gdpPercap)) + geom_point()
+
+```
+
